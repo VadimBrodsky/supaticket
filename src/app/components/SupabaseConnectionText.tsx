@@ -1,11 +1,11 @@
 "use client";
 
+import { getSupabaseBrowserClient } from "@/supabase-utls/browserClient";
 import { useEffect } from "react";
-import { createSupabaseClient } from "@/supabase-utls/client";
 
 export function SupabaseConnectionTest() {
   useEffect(() => {
-    const supabase = createSupabaseClient();
+    const supabase = getSupabaseBrowserClient();
     supabase.storage.listBuckets().then((result) => console.log("Bucket List", result));
   }, []);
 
