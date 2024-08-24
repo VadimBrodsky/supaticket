@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "be:start": "supabase start",
-    "be:stop": "supabase stop"
+    "be:stop": "supabase stop",
+    "be:status": "supabase status"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.2",
